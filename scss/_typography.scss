@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap');
+
+
+
+.headline {
+    font-family: var(--headline-font);
+    text-transform: uppercase;
+    color: var(--clr-black);
+}
+
+// Change headline color if on dark background
+
+.dark {
+    .headline {
+        color: var(--clr-white);
+    }
+}
+
+h1, h3, p {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.headline-xl {
+    @extend .headline;
+    font-size: 3.75rem;
+    line-height: 3.4375rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+
+    @media screen and(min-width:768px) {
+        font-size: 4.375rem;
+        line-height: 4.0625rem;
+    }
+
+    @media screen and(min-width:1280px) {
+        font-size: 6rem;
+        line-height: 5.5rem;  
+    }
+}
+
+.headline-l {
+    @extend .headline;
+    font-size: 4.375rem;
+    line-height: 4.375rem;
+
+    @media screen and(min-width:768px) {
+        font-size: 3.125rem;
+        line-height: 2.8125rem;
+    }
+
+    @media screen and(min-width:1280px) {
+        font-size: 4.375rem;
+        line-height: 4.375rem;  
+    }
+}
+
+.headline-m {
+    @extend .headline;
+    font-size: 3.125rem;
+    line-height: 2.8125rem;
+    margin-bottom: 1.5rem;
+
+    @media screen and(min-width:1280px) {
+        font-size: 3.75rem;
+        line-height: 3.125rem;  
+    }
+}
+
+.headline-s {
+    @extend .headline;
+    font-size: 1.45rem;
+    line-height: 1.35rem;
+    margin-bottom: 2.375rem;
+
+    @media screen and(min-width:1280px) {
+        font-size: 2rem;
+        line-height: 2rem;  
+    }
+}

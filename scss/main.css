@@ -1,0 +1,268 @@
+
+/****************************** Logo */
+
+.logo a {
+    padding-right: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 460px;
+}
+
+/****************************** Headings */
+
+h1, h2, h3, h4 {
+	font-family: 'msh', sans-serif !important;
+	font-weight:400 !important;
+	text-transform:none !important;
+}
+
+.msh-headline h1, .msh-headline h2 {
+	letter-spacing: -4px !important;
+}
+
+.headline__hero h1, .msh-headline h2 {
+	line-height:1 !important;
+}
+
+@media screen and (min-width:600px) {
+  .msh-headline h2 {
+  font-size: 7vw !important;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .msh-headline h2 {
+	  font-size: 5vw !important;
+  }
+}
+
+.green-text--thin {
+	color: #99CA40;
+	font-weight:200
+}
+
+.headline__hero p {
+	font-family: 'msh', sans-serif;
+	font-weight:300;
+}
+
+@media screen and (min-width:769px) {
+	.headline__hero {
+	  max-width: 80%;
+  }
+}
+
+@media screen and (min-width:860px) {
+	.headline__hero {
+	  max-width: 60%;
+  }
+}
+
+/*  Callout headline */
+
+.msh-callout p {
+	font-family: 'msh', sans-serif !important;
+	font-weight:200 !important;
+	font-size: 34px !important;
+  line-height: 1.15 !important;
+}
+
+@media screen and (min-width:768px) {
+  .msh-callout p {
+    font-size: 4.5vw !important;
+    line-height: 1.15 !important;
+  }
+}	
+
+@media screen and (min-width:1200px) {
+	.msh-callout p {
+	  font-size: 3.5vw !important;
+    line-height: 1.15 !important;
+  }
+}
+
+/****************************** tags - pill shape */
+
+.tag-pill p {
+	margin: 0;
+}
+
+.tag-pill a {
+    background: #333;
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 11px;
+    color: white;
+    border-radius: 50px;
+	  font-weight: bold;
+	margin-bottom: .5rem
+}
+
+.tag-pill a:hover {
+	background:#99CA40;
+	color: white;
+	text-decoration: none;
+}
+
+/****************************** Product & Sevice Logos */
+
+.logo__product img {
+	max-width: 300px;
+	margin-bottom: 2rem;
+	width: 100%;
+}
+
+.product__container {
+	padding-bottom:4rem;
+}
+
+.product__container {
+  margin-bottom: 4rem !important;
+}
+
+.services__container .av-special-heading {
+  margin-top: 10px !important;
+}
+
+
+/****************************** Buttons */
+
+.msh-btn__lg--green a, input.msh-btn__lg--green {
+    min-width: 220px !important;
+    border-radius: 50px !important;
+    border: none !important;
+    height: 50px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: #333 !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    padding: 1rem 2rem !important;
+    font-family: "msh" , sans-serif;
+    position: absolute !important;
+    bottom: 0;
+}
+
+@media screen and (min-width:768px) {
+  .msh-btn__lg--green a, input.msh-btn__lg--green {
+    font-size: 16px !important;
+  }
+}
+
+/****************************** Main Nav */
+
+#top .main_menu ul:first-child {
+    width: auto;
+    float: right;
+}
+.main_menu .menu li:nth-child(6) {
+    margin-left: 8rem;
+}
+
+/****************************** Newsletter Section */
+
+#newsletter-footer-section {
+	position: relative;
+	z-index:2;
+}
+
+#newsletter-footer-section .entry-content-wrapper {
+  
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+}
+
+.newsletter__inner {
+  box-shadow: 0 0 14px rgba(0,0,0,.2);
+  border-radius: 14px;
+  padding: 2rem 1rem;
+  max-width: 70rem;
+  float: none !important;
+  clear: none !important;
+}
+
+@media screen and (min-width:769px) {
+  .newsletter__inner {
+    box-shadow: 0 0 14px rgba(0,0,0,.2);
+    border-radius: 14px;
+    padding: 2rem 4rem;
+    max-width: 70rem;
+  }
+}
+
+#Newsletter-form fieldset {
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+}
+
+#Newsletter-form fieldset input[type="submit"] {
+  line-height:1;
+}
+
+@media screen and (min-width:769px) { 
+  #Newsletter-form fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  #Newsletter-form fieldset input[type="submit"] {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+
+
+
+/****************************** Footer */
+
+#footer {
+    padding: 145px 0 30px 0;
+    z-index: 1;
+}
+
+#media_image-3.widget_media_image img {
+  max-width: 240px !important;
+	width: 100%;
+}
+
+
+
+
+
+/********************************* Hero Section */
+
+#hero-section {
+  background-size: contain !important;
+  background-position: top right -66px !important;
+} 
+
+@media screen and (min-width:600px) {
+  #hero-section {
+    background-size: contain !important;
+    background-position: top right -66px !important;
+  }
+}
+
+@media screen and (min-width:860px) {
+  #hero-section {
+    background-size: auto !important;
+    background-position: top right !important;
+  }
+}
+	
+#hero-section .container {
+  height: 320px !important;
+}
+
+@media screen and (min-width:860px) {
+  #hero-section .container {
+    height: 500px !important;
+  }
+}
